@@ -19,12 +19,13 @@ const UserForm = promps => {
         // And also need to {} to add a comment in Grid tag.
         // Typography, same as p tag. if put componebt with h1, it will be h1 tag. It can change with p, h2,h3...
         // xs={12} means this Grid take full width of the page.
-        
             <Grid xs={12}>
                 <Typography 
                     component={'h1'} 
                     sx={{color: '#000000',
-                        marginBottom: '20px'
+                        marginBottom: '40px',
+                        textAlign: 'center',
+                        fontSize: '30px',
                     }}
                 >
                     User Form
@@ -38,8 +39,9 @@ const UserForm = promps => {
                     htmlFor="id" 
                     sx={{
                         color:'#000000',
-                        marginRight: '20px',
+                        marginRight: '50px',
                         fontSize: '16px',
+                        textAlign: 'center',
                         width:'100px',
                         display:'block',
                     }}
@@ -64,8 +66,9 @@ const UserForm = promps => {
                     htmlFor="id" 
                     sx={{
                         color:'#000000',
-                        marginRight: '20px',
+                        marginRight: '50px',
                         fontSize: '16px',
+                        textAlign:'center',
                         width:'100px',
                         display:'block',
                     }}
@@ -89,7 +92,7 @@ const UserForm = promps => {
                     marginBottom: '20px',
                     backgroundColor: '#00c6e6',
                     color: '#000000',
-                    marginLeft:'15px',
+                    marginLeft:'150px',
                     marginTop: '20px',
                     "&:hover":{
                         opacity:'0.7',

@@ -1,6 +1,15 @@
 import { Button, Grid, Typography } from "@mui/material";
+import { useState } from "react";
 
-const UserForm = promps => {
+//props use to transfer data from one component to another
+const UserForm = props => {
+
+    //useState is a hook. It use to create a variable in react.
+    // why we use state variable? we use this to change the value of variable.
+    const [id, setId] = useState(0);
+    const [name, setName] = useState('');
+
+
     return(
 
     // Grid, same as div tag
@@ -53,9 +62,9 @@ const UserForm = promps => {
                     id="id"
                     name="id"
                     sx={{width: '400px'}}
-                    value={''}
+                    value={id}
                     // e declare a event. It ia a function.
-                    onChange={e =>{}}
+                    onChange={e => setId(e.target.value)}
                 />
             </Grid>
         }
@@ -80,9 +89,9 @@ const UserForm = promps => {
                     id="name"
                     name="name"
                     sx={{width: '400px'}}
-                    value={''}
+                    value={name}
                     // e declare a event. It ia a function.
-                    onChange={e =>{}}
+                    onChange={e =>setName(e.target.value)}
                 />
             </Grid>
             <Button

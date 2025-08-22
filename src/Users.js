@@ -3,6 +3,8 @@ import UserForm from "./UserForm";
 import UsersTable from "./UsersTable";
 
 //users is array of obeject
+//users is not state variable. it is a normal variable.
+// const variable can not change the value. it is fixed value.
 const users=[
     {
         id:1,
